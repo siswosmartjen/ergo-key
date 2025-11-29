@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
-  default:
-  - {t: ']', h: Gui}
+  MAIN:
+  - ↹
   - Q
   - W
   - E
@@ -11,9 +12,9 @@ layers:
   - I
   - O
   - P
-  - '['
-  - {t: '`', h: Ctrl}
-  - A
+  - BACKSPACE
+  - LEFT SHIFT
+  - {t: A, h: LEFT GUI}
   - S
   - D
   - F
@@ -23,8 +24,8 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - {t: '''', h: RIGHT SHIFT}
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -35,27 +36,15 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
-  - {t: ↹, h: raise}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: lower}
-  - {t: Esc, h: lower}
-  - {t: ⌫, h: Shift}
-  - {t: ⌦, h: raise}
-  lower:
-  - {t: F1, h: Gui}
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: +, h: Ctrl}
+  - '-'
+  - {t: LEFT ALT, h: ESCAPE}
+  - NUM
+  - ␣
+  - ENTER
+  - {t: ⌦, h: SYM}
+  - RIGHT ALT
+  NUM:
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -66,81 +55,93 @@ layers:
   - '*'
   - (
   - )
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
   - '4'
   - '5'
+  - ''''
+  - '='
+  - '`'
+  - '{'
+  - '}'
+  - '"'
+  - {t: ▽, type: trans}
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - Alt
+  - \
+  - +
+  - '~'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
-  - {t: KP NUM, h: Gui}
-  - KP SLASH
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MINUS
-  - Vol Up
-  - Home
-  - Print Scrn
-  - Page Up
-  - SLCK
-  - CLCK
-  - {t: '=', h: Ctrl}
-  - KP MULTIPLY
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
+  - {t: ▽, type: trans}
+  SYM:
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
   - MUTE
-  - ←
-  - ↑
-  - →
-  - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
-  - KP 0
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - Vol Down
-  - End
+  - VOLUME DOWN
+  - VOLUME UP
+  - Home
+  - LEFT ARROW
   - ↓
-  - Page Down
-  - Pause Break
-  - Alt
+  - UP ARROW
+  - →
+  - End
+  - {t: ▽, type: trans}
+  - Ctl+F4
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Alt+↹
+  - Ctl+↹
+  - ⌦
+  - PAGE DOWN
+  - PAGE UP
+  - INSERT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
+  ADJ:
   - Boot
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&msc MOVE_X(10)'
+  - '&msc MOVE_Y(10)'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
+  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - BT CLR
   - BT 1
   - BT 2
@@ -165,9 +166,9 @@ layers:
   - ''
   - ''
   - Reset
-  - {type: held}
-  - ''
-  - {type: held}
-  - ''
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
   - {t: ▽, type: trans}
