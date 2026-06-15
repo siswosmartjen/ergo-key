@@ -139,8 +139,8 @@ layers:
   - '&mkp MB2'
   - '&msc MOVE_X(10)'
   - '&msc MOVE_Y(10)'
-  - ''
-  - '&studio_unlock'
+  - Scroll ↓
+  - Scroll ↓
   - Boot
   - BT CLR
   - BT 1
