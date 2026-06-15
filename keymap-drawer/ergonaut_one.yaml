@@ -140,7 +140,7 @@ layers:
   - '&msc MOVE_X(10)'
   - '&msc MOVE_Y(10)'
   - Scroll ↓
-  - Scroll ↓
+  - Scroll ↑
   - Boot
   - BT CLR
   - BT 1
@@ -148,12 +148,12 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - BT 5
-  - BT 4
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT CLR
+  - Caps Word
+  - ''
+  - '&mkp MB1'
+  - ''
+  - ''
+  - ''
   - Reset
   - ''
   - ''
